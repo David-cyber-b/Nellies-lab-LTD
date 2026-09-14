@@ -9,23 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>tailwind.config={theme:{extend:{colors:{obsidian:'#0a0a0a',gold:'#d4af37'},fontFamily:{display:['Fraunces','serif'],sans:['Sora','sans-serif']}}}}</script>
 <style>
-  body{
-  background-image: url('logo-bg.jpg.png');
-  background-size: contain;/* Changed from cover to contain so full logo shows */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color:#0a0a0a; /* fallback */
-}
-  /* DARK OVERLAY SO TEXT IS READABLE */
-body::before{
-  content:"";
-  position:fixed;
-  top:0; left:0; right:0; bottom:0;
-  background:rgba(0,0,0,0.2); /* Much Lighter-0.2 so logo colors show*/
-  z-index:0;
-}
-
+  
 #hero3D{position:absolute;inset:0;z-index:1}
   #hero3D{position:absolute;inset:0;z-index:0}
   .btn-gold{background:linear-gradient(90deg,#d4af37,#f2d879)}
