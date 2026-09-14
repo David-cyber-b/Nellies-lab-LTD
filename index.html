@@ -1,22 +1,82 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Nellie's Laboratories Ltd RC</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- FONTS + TAILWIND + THREEJS -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script>tailwind.config={theme:{extend:{colors:{obsidian:'#0a0a0a',gold:'#d4af37'},fontFamily:{display:['Fraunces','serif'],sans:['Sora','sans-serif']}}}}</script>
+
+<script>
+tailwind.config={
+  theme:{
+    extend:{
+      colors:{obsidian:'#0a0a0a',gold:'#d4af37'},
+      fontFamily:{fraunces:['Fraunces','serif'],sora:['Sora','sans-serif']}
+    }
+  }
+}
+</script>
+
 <style>
-  
-#hero3D{position:absolute;inset:0;z-index:1}
-  #hero3D{position:absolute;inset:0;z-index:0}
-  .btn-gold{background:linear-gradient(90deg,#d4af37,#f2d879)}
-  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(212,175,55,.4)}
+body{
+  background:#0a0a0a; 
+  margin:0; 
+  overflow-x:hidden; 
+  font-family: 'Sora', sans-serif;
+}
+
+#hero3D{
+  position:absolute;
+  inset:0;
+  z-index:1
+}
+
+/* CENTER ALL HERO CONTENT */
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+h1{
+  font-family: 'Fraunces', serif;
+  font-size:clamp(2.5rem, 6vw, 4.5rem);
+  font-weight:800;
+  color:#d4af37; /* Gold */
+  margin-bottom:16px;
+  line-height:1.1;
+}
+
+p{
+  font-size:clamp(1rem, 2.5vw, 1.25rem);
+  color:#E5E5E5;
+  max-width:650px;
+  margin-bottom:32px;
+}
 </style>
 </head>
-<body class="text-white font-sans">
+
+<body class="text-white">
+  
+  <!-- 3D ANIMATION CANVAS -->
+  <canvas id="hero3D"></canvas>
+  
+  <!-- CENTERED CONTENT -->
+  <div class="hero-content">
+    <h1>Nellie's Laboratories Ltd RC</h1>
+    <p>Formulate. Develop & Scale Hair, Skin & Personal Care Products</p>
+    
+    <!-- BUTTON GOES HERE -->
+
 
 <!-- WHATSAPP BUTTON -->
 <a href="https://wa.me/2348023216673" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl">WA</a>
