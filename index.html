@@ -23,6 +23,28 @@
 <!-- NAV -->
 <nav class="fixed top-0 w-full z-50 bg-obsidian/90 backdrop-blur border-b border-gold/20">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- NAVBAR -->
+<nav class="border-b border-gold/20 sticky top-0 z-50 bg-obsidian/80 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-gold">
+      <span class="font-display text-xl text-gold">Nellie's Lab</span>
+    </div>
+
+    <!-- LIVE CLOCK - NEW -->
+    <div id="liveClock" class="hidden md:flex flex-col items-end">
+      <p class="text-gold font-semibold text-lg" id="time"></p>
+      <p class="text-gray-400 text-xs" id="date"></p>
+    </div>
+
+    <!-- BUTTON -->
+    <a href="contact.html" class="bg-gold text-black px-5 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition">
+      Book Consultation
+    </a>
+  </div>
+</nav>
     <!-- YOUR LOGO GOES HERE -->
     <img src="logo.jpg.png" alt="Nellie's Logo" class="h-12 rounded-full">
     <a href="contact.html" class="btn-gold px-5 py-2 rounded-full text-black font-semibold">Book Consultation</a>
@@ -56,6 +78,37 @@
         <li>✓ Feasibility Studies & Market Research</li>
       </ul>
     </div>
+  </div>
+</section>
+
+  <!-- TEAM / LEADERSHIP -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+  <h2 class="font-display text-4xl text-center text-gold mb-4">Our Brand</h2>
+  <p class="text-center text-gray-400 mb-12">Premium formulations by Nellie's Laboratories Ltd RC</p>
+  
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- LEFT: CREAM PRODUCT IMAGE -->
+    <div class="bg-obsidian p-6 rounded-2xl border border-gold/20">
+      <img src="cream.jpg" alt="Nellie's Laboratories Cream" class="w-full rounded-xl">
+      <p class="text-center text-gray-400 text-sm mt-4">Premium Hair & Skin Care Formulations</p>
+    </div>
+    
+    <!-- RIGHT: FOUNDER INFO -->
+    <div class="bg-obsidian p-8 rounded-2xl border border-gold/20">
+      <h3 class="text-gold text-2xl font-semibold mb-3">Leadership & Quality</h3>
+      <p class="text-gray-300 leading-relaxed mb-4">
+        At Nellie's Laboratories Ltd, we combine 15+ years of expertise in cosmetic product development with strict NAFDAC compliance to bring your brand to life.
+      </p>
+      <ul class="space-y-2 text-gray-300">
+        <li>✓ Product Development & Formulation</li>
+        <li>✓ Lab Setup & QC Training</li>
+        <li>✓ Factory Design & Compliance</li>
+        <li>✓ Market Research & Feasibility</li>
+      </ul>
+      <p class="text-gold italic mt-6">Healthy Hair • Confident You</p>
+    </div>
+    
   </div>
 </section>
 
@@ -190,7 +243,7 @@ animate();
       
       <!-- COLUMN 1: LOGO + ABOUT -->
       <div>
-        <img src="logo.jpg" alt="Nellie's Logo" class="h-12 mb-4 rounded-full">
+        <img src="logo.jpg.png" alt="Nellie's Logo" class="h-12 mb-4 rounded-full">
         <p class="text-gray-400 text-sm">Nellie's Laboratories Ltd RC<br>Hair, Skin & Personal Care Product Development</p>
       </div>
 
@@ -233,5 +286,35 @@ animate();
     </div>
   </div>
 </footer>
+
+  <script>
+function updateClock() {
+  const now = new Date();
+  
+  // 12hr format with seconds
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  
+  hours = hours % 12;
+  hours = hours ? hours : 12; // 0 becomes 12
+  hours = String(hours).padStart(2, '0');
+  
+  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+  
+  // Date
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Africa/Lagos' };
+  const dateString = now.toLocaleDateString('en-NG', options);
+  
+  document.getElementById('time').textContent = timeString;
+  document.getElementById('date').textContent = dateString + ' | WAT';
+}
+
+// Update every second
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+  
 </body>
 </html>
