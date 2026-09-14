@@ -90,7 +90,7 @@
     
     <!-- LEFT: CREAM PRODUCT IMAGE -->
     <div class="bg-obsidian p-6 rounded-2xl border border-gold/20">
-      <img src="cream.jpg" alt="Nellie's Laboratories Cream" class="w-full rounded-xl">
+      <img src="cream.jpg.jpg" alt="Nellie's Laboratories Cream" class="w-full rounded-xl">
       <p class="text-center text-gray-400 text-sm mt-4">Premium Hair & Skin Care Formulations</p>
     </div>
     
@@ -164,6 +164,47 @@
   </div>
 </section>
 
+  <!-- HOW IT WORKS -->
+<section class="py-20 px-6 bg-zinc-950">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-display text-4xl text-center text-gold mb-4">How We Work With You</h2>
+    <p class="text-center text-gray-400 mb-12">From idea to shelf in 4 simple steps</p>
+    
+    <div class="grid md:grid-cols-4 gap-8">
+      
+      <!-- STEP 1 -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 text-center hover:scale-105 transition">
+        <div class="text-6xl text-gold mb-4 font-display">01</div>
+        <h3 class="text-gold font-semibold text-xl mb-2">Consultation</h3>
+        <p class="text-gray-400 text-sm">We discuss your product vision, target market, and budget. Free 30min strategy call.</p>
+      </div>
+      
+      <!-- STEP 2 -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 text-center hover:scale-105 transition">
+        <div class="text-6xl text-gold mb-4 font-display">02</div>
+        <h3 class="text-gold font-semibold text-xl mb-2">Formulation</h3>
+        <p class="text-gray-400 text-sm">Lab development, stability testing & NAFDAC compliant formula. Samples provided.</p>
+      </div>
+      
+      <!-- STEP 3 -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 text-center hover:scale-105 transition">
+        <div class="text-6xl text-gold mb-4 font-display">03</div>
+        <h3 class="text-gold font-semibold text-xl mb-2">Production</h3>
+        <p class="text-gray-400 text-sm">Scale up to factory level with full QC. We handle staff training & compliance.</p>
+      </div>
+      
+      <!-- STEP 4 -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 text-center hover:scale-105 transition">
+        <div class="text-6xl text-gold mb-4 font-display">04</div>
+        <h3 class="text-gold font-semibold text-xl mb-2">Launch</h3>
+        <p class="text-gray-400 text-sm">Branding, packaging, NAFDAC registration & market entry support. Go to market.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
   !-- TESTIMONIALS -->
 <section class="py-20 px-6 bg-zinc-950">
   <div class="max-w-7xl mx-auto">
@@ -235,6 +276,22 @@ scene.add(mesh);camera.position.z=4;
 function animate(){requestAnimationFrame(animate);mesh.rotation.x+=.005;mesh.rotation.y+=.008;renderer.render(scene,camera)}
 animate();
 </script>
+
+  <!-- NEWSLETTER / LEAD CAPTURE -->
+<section class="py-16 px-6">
+  <div class="max-w-3xl mx-auto bg-obsidian p-10 rounded-2xl border border-gold/20 text-center">
+    <h2 class="font-display text-3xl text-gold mb-3">Get Free Formulation Tips</h2>
+    <p class="text-gray-400 mb-6">Weekly insights on cosmetic product development in Nigeria</p>
+    
+    <form onsubmit="alert('Thank you! We will contact you from info@nellieslaboratoriesltd.com'); this.reset(); return false;" class="flex flex-col md:flex-row gap-4">
+      <input type="email" required placeholder="Enter your email" class="flex-1 bg-zinc-900 border border-gold/20 rounded-lg px-4 py-3 text-white focus:border-gold outline-none">
+      <button type="submit" class="bg-gold text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">Subscribe</button>
+    </form>
+    
+    <p class="text-gray-500 text-xs mt-4">We use: <span class="text-gold">info@nellieslaboratoriesltd.com</span> as our contact email</p>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
 <footer class="border-t border-gold/20 bg-zinc-950">
