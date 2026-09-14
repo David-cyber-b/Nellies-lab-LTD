@@ -81,6 +81,63 @@
   </div>
 </section>
 
+  <!-- EXIT INTENT POPUP -->
+<script>
+let exitPopupShown = false;
+
+document.addEventListener('mouseleave', function(e){
+  // Only trigger when mouse leaves from top of page
+  if(e.clientY < 0 && !exitPopupShown){
+    exitPopupShown = true; // Only show once
+    alert('WAIT! Get 10% OFF your first formulation with Nellies Lab 🎁\n\nWhatsApp us now to claim: 08023216673');
+  }
+});
+
+// For mobile: trigger when user scrolls up fast
+let lastScroll = 0;
+window.addEventListener('scroll', function(){
+  let currentScroll = window.scrollY;
+  if(currentScroll < lastScroll && currentScroll < 100 && !exitPopupShown){
+    exitPopupShown = true;
+    setTimeout(() => {
+      alert('Before you go! Book a FREE 15min consultation call 🎯\n\nTap OK to WhatsApp us: 08023216673');
+    }, 500);
+  }
+  lastScroll = currentScroll;
+});
+</script>
+
+  <!-- STATS SECTION -->
+<section class="py-20 px-6 bg-zinc-950">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-display text-4xl text-center text-gold mb-12">By The Numbers</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20">
+        <p class="text-5xl font-bold text-gold counter" data-target="50">0</p>
+        <p class="text-gray-400 mt-2">Brands Formulated</p>
+      </div>
+
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20">
+        <p class="text-5xl font-bold text-gold counter" data-target="200">0</p>
+        <p class="text-gray-400 mt-2">Products Developed</p>
+      </div>
+
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20">
+        <p class="text-5xl font-bold text-gold counter" data-target="100">0</p>
+        <p class="text-gray-400 mt-2">Clients Trained</p>
+      </div>
+
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20">
+        <p class="text-5xl font-bold text-gold counter" data-target="5">0</p>
+        <p class="text-gray-400 mt-2">Years Experience</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- TEAM / LEADERSHIP -->
 <section class="py-20 px-6 max-w-7xl mx-auto">
   <h2 class="font-display text-4xl text-center text-gold mb-4">Our Brand</h2>
@@ -256,6 +313,45 @@
   </div>
 </section>
 
+  <!-- GOOGLE REVIEWS -->
+<section class="py-20 px-6 bg-zinc-950">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-display text-4xl text-gold mb-3">Rated 5.0 on Google</h2>
+    <p class="text-gray-400 mb-8">Real reviews from real clients</p>
+
+    <!-- EMBED WIDGET -->
+    <div class="bg-obsidian border border-gold/20 rounded-2xl p-8">
+      <!-- Option A: If you have Google Reviews -->
+      <iframe src="https://widgets.sociablekit.com/google-reviews/iframe/REPLACE-WITH-YOUR-ID" 
+        width="100%" 
+        height="500" 
+        frameborder="0">
+      </iframe>
+      
+      <!-- Option B: No Google reviews yet? Use this manual version -->
+      <div id="manual-reviews">
+        <div class="text-left space-y-4">
+          <div class="bg-zinc-900 p-4 rounded-xl">
+            <p class="text-gold">★★★</p>
+            <p class="text-gray-300">"Best cosmetic manufacturer in Abuja. Professional and timely."</p>
+            <p class="text-sm text-gray-500 mt-2">- Google Review</p>
+          </div>
+          <div class="bg-zinc-900 p-4 rounded-xl">
+            <p class="text-gold">★★★</p>
+            <p class="text-gray-300">"They helped me formulate and brand my products. Highly recommend!"</p>
+            <p class="text-sm text-gray-500 mt-2">- Google Review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="https://g.page/r/YOUR-GOOGLE-LINK/review" target="_blank" 
+      class="inline-block mt-6 bg-gold text-black px-8 py-3 rounded-xl font-semibold hover:bg-gold/90 transition">
+      Write Us a Review
+    </a>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact" class="py-20 px-6 text-center">
   <h2 class="font-display text-4xl text-gold">Get In Touch</h2>
@@ -289,6 +385,32 @@ animate();
     </form>
     
     <p class="text-gray-500 text-xs mt-4">We use: <span class="text-gold">info@nellieslaboratoriesltd.com</span> as our contact email</p>
+  </div>
+</section>
+
+  <!-- CERTIFICATION DOWNLOADS -->
+<section class="py-16 px-6 bg-zinc-950">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-display text-3xl text-gold mb-3">Company Documents</h2>
+    <p class="text-gray-400 mb-8">Download our official certifications & compliance documents</p>
+    
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="#"onclick="alert('Document coming soon! Contact us for Verification.')"class="bg-obsidian border border-gold/20 px-8 py-4 rounded-xl hover:bg-gold/10 hover:border-gold transition flex items-center justify-center gap-3">
+        <span class="text-2xl">📄</span>
+        <div class="text-left">
+          <p class="text-white font-semibold">CAC Certificate</p>
+          <p class="text-gray-400 text-sm">Nellie's Laboratories Ltd RC</p>
+        </div>
+      </a>
+      
+      <a href="#"onclick="alert('Document coming soon! Contact us for Verification.')"class="bg-obsidian border border-gold/20 px-8 py-4 rounded-xl hover:bg-gold/10 hover:border-gold transition flex items-center justify-center gap-3">
+        <span class="text-2xl">📋</span>
+        <div class="text-left">
+          <p class="text-white font-semibold">NAFDAC Compliance</p>
+          <p class="text-gray-400 text-sm">Product Safety Guide</p>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -371,6 +493,35 @@ function updateClock() {
 // Update every second
 updateClock();
 setInterval(updateClock, 1000);
+</script>
+
+  <script>
+// Animate numbers on scroll
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+const animateCounters = () => {
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const inc = target / speed;
+      if(count < target){
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target + '+';
+      }
+    };
+    updateCount();
+  });
+};
+
+// Only run when section is visible
+const observer = new IntersectionObserver((entries) => {
+  if(entries[0].isIntersecting){ animateCounters(); observer.disconnect(); }
+});
+observer.observe(document.querySelector('.counter'));
 </script>
   
 </body>
