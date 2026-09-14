@@ -25,9 +25,23 @@
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <!-- YOUR LOGO GOES HERE -->
     <img src="logo.jpg.png" alt="Nellie's Logo" class="h-12 rounded-full">
-    <a href="#contact" class="btn-gold px-5 py-2 rounded-full text-black font-semibold">Book Consultation</a>
+    <a href="contact.html" class="btn-gold px-5 py-2 rounded-full text-black font-semibold">Book Consultation</a>
   </div>
-</nav>
+</nav><!-- NAVBAR -->
+<nav class="border-b border-gold/20 sticky top-0 z-50 bg-obsidian/80 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <img src="logo.jpg" alt="Logo" class="h-10 w-10 rounded-full border-gold">
+      <span class="font-display text-xl text-gold">Nellie's Lab</span>
+    </div>
+
+    <!-- LIVE CLOCK - NEW -->
+    <div id="liveClock" class="hidden md:flex flex-col items-end">
+      <p class="text-gold font-semibold text-lg" id="time"></p>
+      <p class="text-gray-400 text-xs" id="date"></p>
+    </div>
 
 <!-- HERO WITH 3D -->
 <section class="relative h-screen flex items-center">
@@ -53,6 +67,157 @@
     <div class="bg-zinc-900 p-6 rounded-2xl border border-gold/20"><h3 class="text-gold font-semibold">8. Training Programs</h3></div>
   </div>
 </section>
+  <!-- TESTIMONIALS -->
+<section class="py-20 px-6 bg-zinc-950">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-display text-4xl text-center text-gold mb-4">What Our Clients Say</h2>
+    <p class="text-center text-gray-400 mb-12">Trusted by brands across Nigeria</p>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- TESTIMONIAL 1 -->
+      <div class="bg-obsidian p-8 rounded-2xl border-gold/20 hover:border-gold transition">
+        <div class="flex text-gold mb-4">★★★★★</div>
+        <p class="text-gray-300 italic mb-6">"Nellie's Lab helped us develop our hair growth oil from scratch. Professional, fast, and NAFDAC compliant. Sales tripled in 3 months."</p>
+        <div class="flex items-center gap-4">
+          <img src="https://ui-avatars.com/api/?name=Amina+B&background=d4af37&color=000" class="w-12 h-12 rounded-full">
+          <div>
+            <p class="font-semibold">Amina B.</p>
+            <p class="text-sm text-gray-500">CEO, Glow Naturals</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL 2 -->
+      <div class="bg-obsidian p-8 rounded-2xl border-gold/20 hover:border-gold transition">
+        <div class="flex text-gold mb-4">★★★★★</div>
+        <p class="text-gray-300 italic mb-6">"The factory setup service was world class. They trained our QC team and we passed NAFDAC inspection on the first try. Highly recommend."</p>
+        <div class="flex items-center gap-4">
+          <img src="https://ui-avatars.com/api/?name=Chike+O&background=d4af37&color=000" class="w-12 h-12 rounded-full">
+          <div>
+            <p class="font-semibold">Chike O.</p>
+            <p class="text-sm text-gray-500">Founder, SkinCrest</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL 3 -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 hover:border-gold transition">
+        <div class="flex text-gold mb-4">★★★★★</div>
+        <p class="text-gray-300 italic mb-6">"From feasibility study to final product, Nellie's team handled everything. Their formulations are premium and they actually care about your brand."</p>
+        <div class="flex items-center gap-4">
+          <img src="https://ui-avatars.com/api/?name=Fatima+S&background=d4af37&color=000" class="w-12 h-12 rounded-full">
+          <div>
+            <p class="font-semibold">Fatima S.</p>
+            <p class="text-sm text-gray-500">Director, Royal Toiletries</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ABOUT -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="font-display text-4xl text-gold mb-4">About Nellie's Laboratories Ltd RC</h2>
+      <p class="text-gray-300 leading-relaxed">We are a product development and manufacturing consultancy specializing in Hair, Skin, and Personal Care. From idea to shelf, we help brands in Nigeria formulate, test, and scale premium products that meet NAFDAC standards.</p>
+      <p class="text-gold italic mt-4">Healthy Hair • Confident You</p>
+    </div>
+    <div class="bg-zinc-900 rounded-2xl p-8 border border-gold/20">
+      <h3 class="text-gold text-xl font-semibold mb-3">Why Work With Us</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li>✓ 8 Specialized Services</li>
+        <li>✓ Lab Setup & QC Training</li>
+        <li>✓ Factory Design & Turn Around</li>
+        <li>✓ Feasibility Studies & Market Research</li>
+      </ul>
+    </div>
+  </div>
+</section>
+  <!-- TEAM / LEADERSHIP -->
+<section class="py-20 px-6 max-w-7xl mx-auto">
+  <h2 class="font-display text-4xl text-center text-gold mb-4">Our Brand</h2>
+  <p class="text-center text-gray-400 mb-12">Premium formulations by Nellie's Laboratories Ltd RC</p>
+  
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- LEFT: CREAM PRODUCT IMAGE -->
+    <div class="bg-obsidian p-6 rounded-2xl border border-gold/20">
+      <img src="cream.jpg" alt="Nellie's Laboratories Cream" class="w-full rounded-xl">
+      <p class="text-center text-gray-400 text-sm mt-4">Premium Hair & Skin Care Formulations</p>
+    </div>
+    
+    <!-- RIGHT: FOUNDER INFO -->
+    <div class="bg-obsidian p-8 rounded-2xl border border-gold/20">
+      <h3 class="text-gold text-2xl font-semibold mb-3">Leadership & Quality</h3>
+      <p class="text-gray-300 leading-relaxed mb-4">
+        At Nellie's Laboratories Ltd, we combine 15+ years of expertise in cosmetic product development with strict NAFDAC compliance to bring your brand to life.
+      </p>
+      <ul class="space-y-2 text-gray-300">
+        <li>✓ Product Development & Formulation</li>
+        <li>✓ Lab Setup & QC Training</li>
+        <li>✓ Factory Design & Compliance</li>
+        <li>✓ Market Research & Feasibility</li>
+      </ul>
+      <p class="text-gold italic mt-6">Healthy Hair • Confident You</p>
+    </div>
+    
+  </div>
+</section>
+  <!-- HOW IT WORKS -->
+<section class="py-20 px-6 bg-zinc-950">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-display text-4xl text-center text-gold mb-4">How We Work With You</h2>
+    <p class="text-center text-gray-400 mb-12">From idea to shelf in 4 simple steps</p>
+    
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="text-center"><div class="text-5xl text-gold mb-4">1</div><h3 class="text-gold font-semibold mb-2">Consultation</h3><p class="text-gray-400 text-sm">We discuss your product vision, target market & budget</p></div>
+      <div class="text-center"><div class="text-5xl text-gold mb-4">2</div><h3 class="text-gold font-semibold mb-2">Formulation</h3><p class="text-gray-400 text-sm">Lab development, testing & NAFDAC compliant formula</p></div>
+      <div class="text-center"><div class="text-5xl text-gold mb-4">3</div><h3 class="text-gold font-semibold mb-2">Production</h3><p class="text-gray-400 text-sm">Scale up to factory level with full QC</p></div>
+      <div class="text-center"><div class="text-5xl text-gold mb-4">4</div><h3 class="text-gold font-semibold mb-2">Launch</h3><p class="text-gray-400 text-sm">Branding, packaging & market entry support</p></div>
+    </div>
+  </div>
+</section>
+
+  <!-- TRUST & CERTIFICATION -->
+<section class="py-16 px-6 bg-zinc-950 border-y border-gold/10">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="font-display text-3xl text-gold mb-4">Certified & Compliant</h2>
+    <p class="text-gray-400 mb-10">We develop products that meet national standards</p>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- BADGE 1: RC -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 hover:scale-105 transition">
+        <div class="text-5xl mb-4">🏢</div>
+        <h3 class="text-gold text-xl font-semibold mb-2">CAC Registered</h3>
+        <p class="text-gray-400 text-sm">Nellie's Laboratories Ltd RC</p>
+        <p class="text-gray-500 text-xs mt-2">Corporate Affairs Commission</p>
+      </div>
+
+      <!-- BADGE 2: NAFDAC -->
+      <div class="bg-obsidian p-8 rounded-2xl border-gold/20 hover:scale-105 transition">
+        <div class="text-5xl mb-4">✅</div>
+        <h3 class="text-gold text-xl font-semibold mb-2">NAFDAC Standards</h3>
+        <p class="text-gray-400 text-sm">All formulations meet NAFDAC guidelines</p>
+        <p class="text-gray-500 text-xs mt-2">Product Registration Support Available</p>
+      </div>
+
+      <!-- BADGE 3: QUALITY -->
+      <div class="bg-obsidian p-8 rounded-2xl border border-gold/20 hover:scale-105 transition">
+        <div class="text-5xl mb-4">🔬</div>
+        <h3 class="text-gold text-xl font-semibold mb-2">QC & Lab Certified</h3>
+        <p class="text-gray-400 text-sm">Professional Quality Control Setup</p>
+        <p class="text-gray-500 text-xs mt-2">Staff Training & Compliance</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="py-20 px-6 text-center">
@@ -60,6 +225,11 @@
   <p class="mt-4">Email: nkpm2022@gmail.com</p>
   <p>WhatsApp: 08023216673</p>
 </section>
+  <div style="text-align:center; padding:20px;">
+  <h3>Scan to Review Us ⭐</h3>
+  <img src="qr scan code.jpg" alt="Nellie's Laboratories Google Review QR" width="200">
+  <p><a href="https://g.page/r/CZZpUzIo1kJyEBM/review">Or click here to review</a></p>
+</div>
 
 <script>
 // 3D FLOATING ANIMATION
@@ -74,5 +244,322 @@ scene.add(mesh);camera.position.z=4;
 function animate(){requestAnimationFrame(animate);mesh.rotation.x+=.005;mesh.rotation.y+=.008;renderer.render(scene,camera)}
 animate();
 </script>
+  <!-- TESTIMONIALS -->
+<section class="py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-display text-4xl text-gold mb-3">What Our Clients Say</h2>
+    <p class="text-gray-400 mb-12">Brands we've helped launch & scale</p>
+
+    <!-- Slider Container -->
+    <div class="relative overflow-hidden">
+      <div id="testimonial-slider" class="flex transition-transform duration-500">
+        
+        <!-- Testimonial 1 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="bg-obsidian border border-gold/20 p-8 rounded-2xl">
+            <p class="text-gray-300 text-lg mb-6">"Nellies Lab formulated our best-selling body oil. Quality is insane and they delivered in 2 weeks. Sold out in 1 month!"</p>
+            <div class="flex items-center justify-center gap-4">
+              <img src="client1.jpg" class="w-12 h-12 rounded-full object-cover">
+              <div class="text-left">
+                <p class="text-white font-semibold">Aisha B.</p>
+                <p class="text-gold text-sm">GlowEssence Skincare</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="bg-obsidian border-gold/20 p-8 rounded-2xl">
+            <p class="text-gray-300 text-lg mb-6">"Professional, fast, and NAFDAC compliant. Nellies Lab taught me formulation and now I have my own product line."</p>
+            <div class="flex items-center justify-center gap-4">
+              <img src="client2.jpg" class="w-12 h-12 rounded-full object-cover">
+              <div class="text-left">
+                <p class="text-white font-semibold">Tunde O.</p>
+                <p class="text-gold text-sm">T-Organics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="w-full flex-shrink-0 px-4">
+          <div class="bg-obsidian border border-gold/20 p-8 rounded-2xl">
+            <p class="text-gray-300 text-lg mb-6">"Best manufacturer in Abuja! They helped me from idea to shelf. Customer service is A+ and pricing is fair."</p>
+            <div class="flex items-center justify-center gap-4">
+              <img src="client3.jpg" class="w-12 h-12 rounded-full object-cover">
+              <div class="text-left">
+                <p class="text-white font-semibold">Ngozi C.</p>
+                <p class="text-gold text-sm">Crown Glow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="flex justify-center gap-3 mt-8" id="dots"></div>
+  </div>
+</section>
+  <!-- FAQ -->
+<section class="py-20 px-6 bg-zinc-950">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="font-display text-4xl text-center text-gold mb-12">Frequently Asked Questions</h2>
+    
+    <div class="space-y-4">
+      <details class="bg-obsidian p-6 rounded-xl border border-gold/20">
+        <summary class="text-gold font-semibold cursor-pointer">How long does product development take?</summary>
+        <p class="text-gray-400 mt-3">Typically 4-8 weeks depending on the product type and NAFDAC requirements.</p>
+      </details>
+      
+      <details class="bg-obsidian p-6 rounded-xl border border-gold/20">
+        <summary class="text-gold font-semibold cursor-pointer">Do you help with NAFDAC registration?</summary>
+        <p class="text-gray-400 mt-3">Yes. We guide you through the full NAFDAC product registration process.</p>
+      </details>
+      
+      <details class="bg-obsidian p-6 rounded-xl border border-gold/20">
+        <summary class="text-gold font-semibold cursor-pointer">Minimum order quantity?</summary>
+        <p class="text-gray-400 mt-3">We work with startups and big brands. MOQ depends on the product. Let's discuss.</p>
+      </details>
+    </div>
+  </div>
+</section>
+  <!-- NEWSLETTER / LEAD CAPTURE -->
+<section class="py-16 px-6">
+  <div class="max-w-3xl mx-auto bg-obsidian p-10 rounded-2xl border border-gold/20 text-center">
+    <h2 class="font-display text-3xl text-gold mb-3">Get Free Formulation Tips</h2>
+    <p class="text-gray-400 mb-6">Weekly insights on cosmetic product development in Nigeria</p>
+    
+    <form onsubmit="alert('Thank you! We will contact you from info@nellieslaboratoriesltd.com'); this.reset(); return false;" class="flex flex-col md:flex-row gap-4">
+      <input type="email" required placeholder="Enter your email" class="flex-1 bg-zinc-900 border border-gold/20 rounded-lg px-4 py-3 text-white focus:border-gold outline-none">
+      <button type="submit" class="bg-gold text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">Subscribe</button>
+    </form>
+    
+    <p class="text-gray-500 text-xs mt-4">We use: <span class="text-gold">info@nellieslaboratoriesltd.com</span> as our contact email</p>
+  </div>
+</section>
+  <!-- CERTIFICATION DOWNLOADS -->
+<section class="py-16 px-6 bg-zinc-950">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="font-display text-3xl text-gold mb-3">Company Documents</h2>
+    <p class="text-gray-400 mb-8">Download our official certifications & compliance documents</p>
+    
+    <div class="flex flex-col md:flex-row gap-4 justify-center">
+      <a href="#"onclick="alert('Document coming soon! Contact us for verification.")"class="bg-obsidian border border-gold/20 px-8 py-4 rounded-xl hover:bg-gold/10 hover:border-gold transition flex items-center justify-center gap-3">
+        <span class="text-2xl">📄</span>
+        <div class="text-left">
+          <p class="text-white font-semibold">CAC Certificate</p>
+          <p class="text-gray-400 text-sm">Nellie's Laboratories Ltd RC</p>
+        </div>
+      </a>
+      
+      <a href="#"onclick="alert('Document coming soon! Contact us for verification.")"class="bg-obsidian border border-gold/20 px-8 py-4 rounded-xl hover:bg-gold/10 hover:border-gold transition flex items-center justify-center gap-3">
+        <span class="text-2xl">📋</span>
+        <div class="text-left">
+          <p class="text-white font-semibold">NAFDAC Compliance</p>
+          <p class="text-gray-400 text-sm">Product Safety Guide</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- EXIT INTENT POPUP -->
+<script>
+let exitPopupShown = false;
+
+document.addEventListener('mouseleave', function(e){
+  // Only trigger when mouse leaves from top of page
+  if(e.clientY < 0 && !exitPopupShown){
+    exitPopupShown = true; // Only show once
+    alert('WAIT! Get 10% OFF your first formulation with Nellies Lab 🎁\n\nWhatsApp us now to claim: 08023216673');
+  }
+});
+
+// For mobile: trigger when user scrolls up fast
+let lastScroll = 0;
+window.addEventListener('scroll', function(){
+  let currentScroll = window.scrollY;
+  if(currentScroll < lastScroll && currentScroll < 100 && !exitPopupShown){
+    exitPopupShown = true;
+    setTimeout(() => {
+      alert('Before you go! Book a FREE 15min consultation call 🎯\n\nTap OK to WhatsApp us: 08023216673');
+    }, 500);
+  }
+  lastScroll = currentScroll;
+});
+</script>
+  <script>
+// Testimonial Slider
+let currentSlide = 0;
+const slider = document.getElementById('testimonial-slider');
+const slides = slider.children.length;
+const dotsContainer = document.getElementById('dots');
+
+// Create dots
+for(let i = 0; i < slides; i++){
+  const dot = document.createElement('button');
+  dot.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-600');
+  dot.onclick = () => goToSlide(i);
+  dotsContainer.appendChild(dot);
+}
+
+function updateDots(){
+  [...dotsContainer.children].forEach((dot, i) => {
+    dot.classList.toggle('bg-gold', i === currentSlide);
+    dot.classList.toggle('bg-gray-600', i !== currentSlide);
+  });
+}
+
+function goToSlide(n){
+  currentSlide = n;
+  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+  updateDots();
+}
+
+// Auto slide every 4 seconds
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % slides;
+  goToSlide(currentSlide);
+}, 4000);
+
+goToSlide(0);
+</script>
+
+function updateDots(){
+  [...dotsContainer.children].forEach((dot, i) => {
+    dot.classList.toggle('bg-gold', i === currentSlide);
+    dot.classList.toggle('bg-gray-600', i !== currentSlide
+  <!-- STATS SECTION -->
+<section class="py-16 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div>
+      <p class="text-5xl font-bold text-gold counter" data-target="50">0</p>
+      <p class="text-gray-400 mt-2">Brands Formulated</p>
+    </div>
+    <div>
+      <p class="text-5xl font-bold text-gold counter" data-target="200">0</p>
+      <p class="text-gray-400 mt-2">Products Developed</p>
+    </div>
+    <div>
+      <p class="text-5xl font-bold text-gold counter" data-target="100">0</p>
+      <p class="text-gray-400 mt-2">Clients Trained</p>
+    </div>
+    <div>
+      <p class="text-5xl font-bold text-gold counter" data-target="5">0</p>
+      <p class="text-gray-400 mt-2">Years Experience</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+<footer class="border-t border-gold/20 bg-zinc-950">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-4 gap-8 mb-8">
+      
+      <!-- COLUMN 1: LOGO + ABOUT -->
+      <div>
+        <img src="logo.jpg" alt="Nellie's Logo" class="h-12 mb-4 rounded-full">
+        <p class="text-gray-400 text-sm">Nellie's Laboratories Ltd RC<br>Hair, Skin & Personal Care Product Development</p>
+      </div>
+
+      <!-- COLUMN 2: SERVICES -->
+      <div>
+        <h4 class="text-gold font-semibold mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="#" class="hover:text-gold">Hair Care Development</a></li>
+          <li><a href="#" class="hover:text-gold">Skin Care Development</a></li>
+          <li><a href="#" class="hover:text-gold">Factory Set Up</a></li>
+          <li><a href="#" class="hover:text-gold">QC & Lab Training</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3: CONTACT -->
+      <div>
+        <h4 class="text-gold font-semibold mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li>Email: nkpm2022@gmail.com</li>
+          <li>WhatsApp: 08023216673</li>
+          <li>Abuja, Nigeria</li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 4: QUICK LINKS -->
+      <div>
+        <h4 class="text-gold font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="index.html" class="hover:text-gold">Home</a></li>
+          <li><a href="contact.html" class="hover:text-gold">Book Consultation</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="border-t border-gold/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+      <p>© 2026 Nellie's Laboratories Ltd RC. All Rights Reserved.</p>
+      <p class="mt-4 md:mt-0">Designed with Excellence</p>
+    </div>
+  </div>
+</footer>
+  <script>
+function updateClock() {
+  const now = new Date();
+  
+  // 12hr format with seconds
+  let hours = now.getHours();
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  
+  hours = hours % 12;
+  hours = hours ? hours : 12; // 0 becomes 12
+  hours = String(hours).padStart(2, '0');
+  
+  const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+  
+  // Date
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Africa/Lagos' };
+  const dateString = now.toLocaleDateString('en-NG', options);
+  
+  document.getElementById('time').textContent = timeString;
+  document.getElementById('date').textContent = dateString + ' | WAT';
+}
+
+// Update every second
+updateClock();
+setInterval(updateClock, 1000);
+</script>
+  <script>
+// Animate numbers on scroll
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+const animateCounters = () => {
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const inc = target / speed;
+      if(count < target){
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 10);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+};
+
+// Only run when section is visible
+const observer = new IntersectionObserver((entries) => {
+  if(entries[0].isIntersecting){ animateCounters(); observer.disconnect(); }
+});
+observer.observe(document.querySelector('.counter'));
+</script>
+
 </body>
 </html>
