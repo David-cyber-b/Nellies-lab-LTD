@@ -11,7 +11,7 @@
 <style>
   body{
   background-image: url('logo-bg.jpg.png');
-  background-size: cover;
+  background-size: contain;/* Changed from cover to contain so full logo shows */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,7 +22,7 @@ body::before{
   content:"";
   position:fixed;
   top:0; left:0; right:0; bottom:0;
-  background:rgba(0,0,0,0.6); /* 0.6 = dark. Try 0.4 if too dark */
+  background:rgba(0,0,0,0.2); /* Much Lighter-0.2 so logo colors show*/
   z-index:0;
 }
 
